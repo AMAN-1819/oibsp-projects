@@ -1,0 +1,285 @@
+
+body {
+    font-family: Arial, sans-serif;
+    
+   
+    background-color:  beige;
+        background-size: 100% 100%;
+        height: 100vh;
+        margin: 0;
+    
+}
+
+/* Header */
+.header {
+    background: black;
+    color: #fff;
+    padding: 1rem 0;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+   
+}
+
+.logo {
+    font-size: 30px;
+}
+
+/* Carousel Section */
+.carousels {
+    position: relative;
+    width: 100%;
+    height: 140vh;
+    overflow: hidden;
+    margin-top: -6vh;
+}
+
+.carousels-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousels-image {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousels-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousels-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+/* About Section */
+.about {
+    padding: 2rem 2rem;
+    
+    text-align: left;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+.about p{
+    font-size: 19px;
+    color: black;
+}
+
+
+
+
+/* Footer */
+.footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    
+}
+@media (max-width: 768px) {
+    .program-boxes {
+        flex-direction: column;
+    }
+
+    .carousel-buttons button {
+        padding: 0.5rem;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+}
+/* General Section Styling */
+.trainers {
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+.trainers h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+   color: black;
+}
+
+/* Trainer Cards Layout */
+.trainer-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.trainer-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+}
+
+.trainer-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.trainer-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+.trainer-card p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+/* Responsive Styling for Mobile */
+@media (max-width: 768px) {
+    .trainer-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trainer-card {
+        max-width: 100%;
+    }
+}
+/* General Programs Section Styling */
+.programs {
+    padding: 2rem 1rem;
+    text-align: center;
+    
+}
+
+.programs h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: black;
+}
+
+/* Program Cards Layout */
+.program-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.program-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+}
+
+.program-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.program-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.program-card p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+/* Responsive Styling for Mobile */
+@media (max-width: 768px) {
+    .program-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .program-card {
+        max-width: 100%;
+    }
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-card {
+    position: absolute;
+    width: 80%; /* Set width for rectangular cards */
+    height: 70%; /* Set height for rectangular cards */
+    padding: 20px; /* Padding inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    border-radius: 8px; /* Rounded corners */
+    background-color: rgb(189, 110, 235);/* Background color */
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.carousel-card p{
+    font-size: 30px;
+    color: whitesmoke;
+}
+.carousel-card h1{
+    text-align: center;
+    justify-content: center;
+    font-size: 35px;
+
+}
+.carousel-card.active {
+    opacity: 1;
+}
+
